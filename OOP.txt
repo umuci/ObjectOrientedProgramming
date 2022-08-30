@@ -1,1 +1,30 @@
+So lets start about object oriented programming and how to use it via programming languages.
+
+
+                            -Encapsulation
+
+                            -Abstraction
+4 main procedures of OOP 
+                            -Inheritance
+            
+                            -Polymorphism
+
+
+
+So we can think a car as an object.
+All cars have different attributes, these attributes may change model to model.
+
+ENCAPSULATION:
+refers to bundling data with methods that can operate on that data within a class. You can not interract from outside if you do not have the access.
+/*Türkçe basit bir analoji ile anlatmak gerekirse bir oyun yazdığını düşün mesela bir MMORPG. Karakterinin maximum healthi ile current healthi adlı 2 infon var bu iki info karakterin level atlayınca aynı olmak zorunda olduğundan max healthi level atladığında current health ile aynı olacak şekilde set methoduyla atadığımızda karakterimiz level atladığında healthlerimiz max=current haline bürünecek ve karakterin canı tamamlanacaktır.*/
+Get methods helps us to validate information before interact with attributes. You shall not want to allow external classes to edit attributes of an object directly. Important on LARGER SCALE PROGRAMS! You should seperate you code well to make it clean. It makes program simple.
+--Control of access to data.
+--Prevents the program from being spagetti or something like that complicated.
+
+
+ABSTRACTION:
+
+
+
+
 
