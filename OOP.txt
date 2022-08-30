@@ -1,6 +1,5 @@
 So lets start about object oriented programming and how to use it via programming languages.
 
-
                             -Encapsulation
 
                             -Abstraction
@@ -10,11 +9,8 @@ So lets start about object oriented programming and how to use it via programmin
                             -Polymorphism
 
 
-
-So we can think a car as an object.
-All cars have different attributes, these attributes may change model to model.
-
 ENCAPSULATION:
+
 refers to bundling data with methods that can operate on that data within a class. You can not interract from outside if you do not have the access.
 /*Türkçe basit bir analoji ile anlatmak gerekirse bir oyun yazdığını düşün mesela bir MMORPG. Karakterinin maximum healthi ile current healthi adlı 2 infon var bu iki info karakterin level atlayınca aynı olmak zorunda olduğundan max healthi level atladığında current health ile aynı olacak şekilde set methoduyla atadığımızda karakterimiz level atladığında healthlerimiz max=current haline bürünecek ve karakterin canı tamamlanacaktır.*/
 Get methods helps us to validate information before interact with attributes. You shall not want to allow external classes to edit attributes of an object directly. Important on LARGER SCALE PROGRAMS! You should seperate you code well to make it clean. It makes program simple.
@@ -23,6 +19,42 @@ Get methods helps us to validate information before interact with attributes. Yo
 
 
 ABSTRACTION:
+
+Interface and Implementation
+Interface refers to the way sections of code communication.
+Implementation codes and methods should be hidden.
+/* Algılaması kolay ama açıklaması zor olan bu prensibi bir analoji ile anlatmaya çalışacağım. Satrançta at ve kral var diyelim. İkisi de birlikte çalışmalı ve birlikte iletişim kurmalı. Kral şah pozisyonundaysa atın hareket edemeyeceğini söylecek şekilde Interface ata kralın statusunu yollar. At gereken bilgiyi aldıktan sonra kralın nasıl hareket edeceği veya ne yapacağının bir önemi yoktur. Yapacağı hamleyi yapabilip yapamayacağı harici kralın içeriğini kontrol etmez ve işini yapmaya devam eder. Abstractiondaki Interface mantığı tam olarak bu işe yarar.*/
+
+If we make classes rely on each other that cause a ripple effect and crash the code or make it completely unusable in certain cases. That is why we should use abstraction while we are building big project via OOP principles. Interface helps us to prevent these problems. 
+
+-- Abstraction means no more complex and entagled programs. 
+
+INHERITANCE:
+
+ Inheritance is the principle that allows classes to derive from other classes. 
+ 
+ /* silah classın var ve herkesin silahında sahip olan özellikler var, mesela damage, ağırlık gibi. Silahlarında aralarında belli çeşitler var mesela pompalı ve uzak menzillli gibi. Bu weapon türlerinin her çeşidinin damage weight gibi özelliklere sahip olmasını sağlar. Bu durumda Superclass weapon ve subclassler pumpedguns ve sniper_rifles olarak tanımlanabilir. Class hierarachyi sen yaratabilirsin. Mesela Weapon bir ITEM classinin subclassı olabilir ve Superclass ITEM olur. */
+ 
+ Public member can be accessed from anywhere in code. Useful when you use that member so frequently. Anysubclass superclass etc.
+ 
+ Private members can not accessed by anywhere if member is not defined in the class. This allows programmer to create multiple private members of the same name in diffrent locations so that they do not conflict with another one. 
+ /* Farklı konumlarda aynı isimli private memberler oluşturursan karışıklık oluşmaz ve bu iki private member memoryde farklı yerler tutar.*/
+
+Protected members can be accessed within the class it is defined as well as any subclasses of that class.
+
+POLYMORPHISM
+
+2 types of polymorphism
+Dynamic Polymorphism:
+/* class Car
+    class sportsCar 
+    
+    //both have drive function with mile information. When we drive both car will use gas but sports car will use much more gas when we are trying to calculate the usage of gas after the driving session. So we should create different implementation depends on the hierarchy of classes. The implementation only changes when the program starts to run.
+
+Static polymorphism:
+
+Method overloading. /* her bir compile kısmında farklı parametre tipi kullanılır ve ona göre classta kullanılması istenen function çalışır.*/ 
+When using these method you should be ensure that you are calling the correct form of the method.
 
 
 
